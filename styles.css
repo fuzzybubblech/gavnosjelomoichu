@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+h2 {
+  padding-bottom: 5px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+.highlight {
+  background-color: #d2d2d2; /* Цвет заднего фона */
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  max-width: 400px; /* Ограничение ширины абзаца */
+  text-align: justify; /* Выравнивание текста по ширине */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 5px 0;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.9em;
+}
+.column {
+  display: flex;
+  flex-direction: column; /* Расположить элементы в столбик */
+  gap: 10px; /* Отступ между абзацами */
+  max-width: 300px; /* Ограничение ширины столбика */
+  margin: 20px auto; /* Центрирование графы по горизонтали */
+}
+.video-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: #ff00d9;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px; /* Отступ от низа страницы */
+  right: 20px; /* Отступ от правого края */
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+/* Эффект взрыва */
+.explode {
+  animation: explode 0.6s forwards;
+}
+
+/* Ключевые кадры для анимации взрыва */
+@keyframes explode {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}

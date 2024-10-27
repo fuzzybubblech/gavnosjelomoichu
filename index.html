@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <style>
+      /* Стили для кнопки */
+      .video-button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+        color: white;
+        background-color: #007bff;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        cursor: pointer;
+        position: relative;
+        transition: transform 0.3s, opacity 0.3s;
+      }
+
+      /* Эффект взрыва */
+      .explode {
+        animation: explode 0.6s forwards;
+      }
+
+      /* Ключевые кадры для анимации взрыва */
+      @keyframes explode {
+        0% {
+          transform: scale(1);
+          opacity: 1;
+        }
+        50% {
+          transform: scale(1.5);
+          opacity: 0.7;
+        }
+        100% {
+          transform: scale(2);
+          opacity: 0;
+        }
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Резюме Гошана</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Подключаем CSS файл -->
+  </head>
+  <body>
+    <img
+      src="Vnutri.jpg"
+      alt="Моя фотография"
+      style="display: block; margin: 0 auto; width: 200px; border-radius: 50%"
+    />
+    <header>
+      <h1>Georgiui</h1>
+      <p>Ебасос на заводе</p>
+    </header>
+
+    <section>
+      <h2>Обо мне</h2>
+      <p class="highlight">Краткая информация о себе:</p>
+
+      у лукоморья дуб зелёный;<br />
+      50 детей ебут бетон,<br />
+      кисломолочный air jordan,<br />
+      бисексуальный бадминтон.<br /><br />
+
+      меня григорий лепс заводит,<br />
+      я ем варенье из перил;<br />
+      там папапеве гемабоди,<br />
+      там фурри патриарх кирилл.<br /><br />
+
+      там на неведомых дорожках<br />
+      следы облизанных ноздрей;<br />
+      там газированная свёкла,<br />
+      там реактивный мавзолей.<br /><br />
+
+      там котопёс в маршрутке лопнул,<br />
+      там доширак внутриутробно!<br />
+      звучит пищание пиздой;<br />
+      манты сварились в теслакаре,<br />
+      чиф-киф родился в сыктывкаре,<br />
+      хуй пал в бою с твоей губой.
+    </section>
+
+    <section>
+      <h2>Опыт работы</h2>
+      <ul>
+        <li class="highlight">
+          <strong>Играл в компик</strong> — Пудж (2006-2018)
+        </li>
+        <li class="highlight">
+          <strong>Начал чето делать</strong> — Где я? (2018-2024)
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Образование</h2>
+      <ul>
+        <li class="highlight">
+          <strong>ПТУ Хельсинки</strong> — гигаслесарь (2018-2020)
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Навыки</h2>
+      <ul>
+        <li class="highlight">Великолепно делаю нечего</li>
+        <li class="highlight">Мастерски дигустирую хмельные напитки</li>
+        <li class="highlight">Могу срать стоя</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p text-align: center;>
+        Контакты: email@example.com | Телефон: +123456789
+      </p>
+    </footer>
+    <a href="#" class="video-button" id="explosiveButton"> Кнопка еба гыг </a>
+
+    <script>
+      // Найдем кнопку по ID
+      const button = document.getElementById("explosiveButton");
+
+      // Добавим обработчик события на клик
+      button.addEventListener("click", function (event) {
+        event.preventDefault(); // Отключаем немедленный переход по ссылке
+
+        // Добавляем класс взрыва
+        button.classList.add("explode");
+
+        // Через 1.5 секунды переходим по ссылке
+        setTimeout(function () {
+          window.location.href = "https://www.youtube.com/watch?v=5E9eqWEVUL4"; // Переход по ссылке
+        }, 1500); // Задержка в 1.5 секунды
+      });
+    </script>
+    <p text-align: center;>
+      Короче вот что я понял. Используя хтмл, ксс и яс можно в целом создать
+      любую страницу<br />
+      При этом, есть скорее всего миллион инструментов упрощающих работу, такие
+      как tinymce, но я в ней не разобрался<br />
+      В целом вся эта история напоминает програмирование на старых Omron
+      системах<br />
+      Я честно говоря в рот ебал трайхардить свою страницу, по крайней мере на
+      этом этапе <br />
+      потому что это тупо скучно.(на это гавно сумарно ушло около 2х часов, тэги
+      я не запомнил, но вчитывался во все, что чат объяснял) Со страчками вообще
+      не хочу работать. <br />
+      но в целом было интересно узнать что-то новое. Хз стоит ли вкатываться<br />
+      с другой стороны бабки не мои и я нечего не проигрываю, не время не
+      деньги, так что попробую вкатиться<br />
+      но куда? В яву?
+    </p>
+  </body>
+</html>
